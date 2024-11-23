@@ -407,7 +407,7 @@ class MockMAVL
 				entrytype = Type.new([:intvec, :floatvec].sample, xDim)
 				return "#{generateDotProd(entrytype)} .dimension"
 			else
-				xy = [".xDimension", ".yDimension"].sample
+				xy = [".rows", ".cols"].sample
 				entrytype = Type.new([:intmat, :floatmat].sample, xDim, yDim)
 				return "#{generateDotProd(entrytype)} #{xy}"
 			end
